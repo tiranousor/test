@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d0b14">
+<title>Moscow × Seoul × Beijing · 26–27.09</title>
+<style>
+:root{--bg:#0d0b14;--card:#171420;--text:#fff8f4;--muted:#bcb4c5;--red:#ff566d;--jade:#7ae2c5;--gold:#f1c86b;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0,rgba(255,86,109,.18),transparent 30%),radial-gradient(circle at 95% 18%,rgba(122,226,197,.12),transparent 28%),linear-gradient(#0b0a11,#11101a 55%,#09090f);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+a{color:inherit}.wrap{width:min(1080px,calc(100% - 28px));margin:auto}.hero{min-height:88vh;display:flex;align-items:flex-end;padding:38px 0 54px;position:relative;overflow:hidden}
+.hero:before{content:"서울";position:absolute;right:-18px;top:26px;font-size:clamp(90px,20vw,220px);font-weight:900;color:rgba(255,255,255,.035);letter-spacing:-.08em}.hero:after{content:"北京";position:absolute;left:-10px;top:32%;font-size:clamp(70px,13vw,150px);font-weight:900;color:rgba(255,86,109,.05)}
+.top{position:absolute;top:20px;left:50%;transform:translateX(-50%);width:min(1080px,calc(100% - 28px));display:flex;justify-content:space-between;gap:10px;z-index:2}.pill{border:1px solid var(--line);background:rgba(255,255,255,.055);backdrop-filter:blur(14px);border-radius:999px;padding:9px 12px;font-size:12px;letter-spacing:.08em}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:end;position:relative;z-index:1}.kicker{color:var(--jade);text-transform:uppercase;letter-spacing:.17em;font-size:12px;font-weight:800;margin-bottom:14px}h1{font-size:clamp(52px,8vw,96px);line-height:.9;letter-spacing:-.065em;margin:0;font-weight:900}h1 em{font-style:normal;color:var(--red)}.lead{max-width:690px;color:#d6ced9;font-size:clamp(17px,2vw,21px);line-height:1.5;margin:22px 0 0}
+.ticket{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.025));border-radius:28px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.34);transform:rotate(2deg)}.ticket strong{display:block;font-size:36px;line-height:1.04;margin:15px 0}.ticket p{color:#c8bfcc;line-height:1.5}.stamp{width:72px;height:72px;border:2px solid var(--red);color:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;font-weight:800;transform:rotate(-10deg)}
+.buttons{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.btn{border:1px solid var(--line);background:rgba(255,255,255,.05);padding:12px 15px;border-radius:999px;text-decoration:none;font-weight:800;font-size:13px}.btn.main{background:var(--red);border-color:var(--red)}
+.nav{position:sticky;top:7px;z-index:20;margin-top:-22px}.navin{display:flex;gap:6px;overflow:auto;width:max-content;max-width:100%;border:1px solid var(--line);background:rgba(14,13,22,.84);backdrop-filter:blur(18px);padding:7px;border-radius:999px}.nav a{text-decoration:none;white-space:nowrap;padding:9px 12px;border-radius:999px;font-size:13px;color:#d8d0dd}
+section{padding:70px 0}.head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:26px}.eyebrow{color:var(--red);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}h2{font-size:clamp(36px,5vw,60px);letter-spacing:-.045em;line-height:1;margin:8px 0 0}.sub{max-width:540px;color:var(--muted);line-height:1.55}
+.card{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border-radius:30px;padding:26px;box-shadow:0 20px 58px rgba(0,0,0,.3)}.daytop{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.daytop strong{font-size:28px}.theme{color:var(--jade);border:1px solid rgba(122,226,197,.28);background:rgba(122,226,197,.06);padding:7px 10px;border-radius:999px;font-size:12px}
+.timeline{display:grid}.row{display:grid;grid-template-columns:82px 20px 1fr;gap:14px;min-height:106px}.time{color:var(--gold);font-weight:800;padding-top:2px;font-variant-numeric:tabular-nums}.rail{position:relative;display:flex;justify-content:center}.rail:before{content:"";position:absolute;top:15px;bottom:-12px;width:1px;background:linear-gradient(var(--red),rgba(255,255,255,.09))}.row:last-child .rail:before{display:none}.dot{width:13px;height:13px;border-radius:50%;background:var(--red);box-shadow:0 0 0 5px rgba(255,86,109,.12);z-index:1}.row:nth-child(even) .dot{background:var(--jade);box-shadow:0 0 0 5px rgba(122,226,197,.11)}.body{padding-bottom:25px}.place{font-size:19px;font-weight:850;margin-bottom:5px}.desc{color:#c5bdc9;line-height:1.5;font-size:14px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.chip{font-size:11px;padding:6px 8px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.05);border-radius:999px}.map{display:inline-block;margin-top:10px;color:var(--jade);font-weight:750;text-decoration:none;font-size:13px}
+.routes{display:grid;grid-template-columns:1fr 1fr;gap:16px}.route{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:24px;padding:18px}.route h3{margin:0 0 15px}.metro{display:flex;align-items:center;overflow:auto;padding-bottom:8px}.st{min-width:118px;text-align:center;position:relative;padding-top:28px;font-size:11px;color:#cfc6d4}.st:before{content:"";position:absolute;top:9px;left:50%;width:11px;height:11px;border-radius:50%;background:var(--red);transform:translateX(-50%)}.st:nth-child(even):before{background:var(--jade)}.st:not(:last-child):after{content:"";position:absolute;top:14px;left:calc(50% + 5px);width:calc(100% - 10px);height:2px;background:linear-gradient(90deg,var(--red),var(--jade))}.st b{display:block;color:white;margin-bottom:3px}
+.spots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.spot{min-height:210px;border:1px solid var(--line);border-radius:24px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:#171521}.spot:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 15%,var(--a),transparent 35%),linear-gradient(180deg,transparent,rgba(7,7,12,.94))}.spot .emo{position:absolute;right:12px;top:4px;font-size:76px}.spot div:last-child{position:relative}.spot small{color:var(--jade);font-weight:800}.spot h3{font-size:21px;margin:6px 0}.spot p{color:#c6bdca;font-size:13px;line-height:1.45;margin:0}
+.note{margin-top:18px;border-left:3px solid var(--gold);background:rgba(241,200,107,.06);padding:14px 16px;border-radius:0 16px 16px 0;color:#d8d0db;line-height:1.5}.count{font-weight:900;color:var(--gold)}
+footer{padding:28px 0 50px;color:#aaa1b0}.foot{border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;gap:16px}.foot strong{display:block;color:white;font-size:19px;margin-bottom:5px}
+@media(max-width:800px){.hero{min-height:auto;padding-top:130px}.grid{grid-template-columns:1fr}.ticket{transform:none}.head{display:block}.sub{margin-top:12px}.routes{grid-template-columns:1fr}.spots{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.wrap{width:calc(100% - 22px)}.top{width:calc(100% - 22px)}.top .pill:last-child{display:none}h1{font-size:50px}.hero{padding-bottom:40px}section{padding:54px 0}.card{padding:19px 15px;border-radius:25px}.daytop{align-items:flex-start;flex-direction:column}.row{grid-template-columns:56px 17px 1fr;gap:9px}.time{font-size:12px}.place{font-size:17px}.spots{grid-template-columns:1fr}.navin{width:100%}.foot{display:block}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+<div class="top"><span class="pill">26—27 SEP 2026 · MOSCOW</span><span class="pill">2 girls · asian mode ON</span></div>
+<div class="wrap grid">
+<div>
+<div class="kicker">private invitation · Москва</div>
+<h1>Moscow × <em>Seoul</em> × Beijing</h1>
+<p class="lead">Ты официально приглашена на наш азиатский уикенд: Москва без туристического марафона, K-pop, Honibi, BLOO, Хуамин, Hongdae и много нормальной еды.</p>
+<div class="buttons"><a class="btn main" href="#d1">Открыть план ↓</a><a class="btn" href="#route">Схема пути</a><button class="btn" id="share" style="color:inherit">Поделиться</button></div>
+</div>
+<aside class="ticket"><div class="stamp">MOSCOW<br>26·09</div><strong>Weekend<br>mission ✦</strong><p>Красиво гуляем, не тратим полдня на метро и оставляем время просто вайбить.</p><p>До старта: <span class="count" id="count">считаем…</span></p></aside>
+</div>
+</header>
+
+<div class="nav"><div class="wrap"><nav class="navin"><a href="#d1">26.09 · BLOO</a><a href="#d2">27.09 · Huaming</a><a href="#route">Маршрут</a><a href="#spots">Места</a></nav></div></div>
+
+<main>
+<section id="d1"><div class="wrap">
+<div class="head"><div><div class="eyebrow">Day 01 · city / K-pop / concert</div><h2>Суббота · 26.09</h2></div><div class="sub">Приезжаем → Тверская → отель → прогулка → Honibi → еда и сборы → BLOO. Никаких лишних районов.</div></div>
+<div class="card">
+<div class="daytop"><strong>BLOO day 🎤</strong><span class="theme">서울 night</span></div>
+<div class="timeline">
+<div class="row"><div class="time">12:00</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Ярославский вокзал</div><div class="desc">Приезжаем и сразу в центр.</div><a class="map" target="_blank" href="https://yandex.ru/maps/?text=%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0">↗ Яндекс Карты</a></div></div>
+<div class="row"><div class="time">~12:40</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Тверская · Добрынинский</div><div class="desc">Нормально едим после дороги, кофе — и дальше заселяться.</div><div class="chips"><span class="chip">лёгкий обед</span><span class="chip">coffee</span></div><a class="map" target="_blank" href="https://yandex.ru/maps/?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0">↗ открыть</a></div></div>
+<div class="row"><div class="time">14:00</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Наш отель · район Трубной</div><div class="desc">Заселяемся, душ/макияж/переодеться, всё лишнее оставляем.</div><div class="chips"><span class="chip">~1 час</span><span class="chip">reset</span></div></div></div>
+<div class="row"><div class="time">15:00</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Гуляем по центру</div><div class="desc">Неглинная → Кузнецкий Мост → Большой театр → Большая Дмитровка → Тверская. Фоткаемся и никуда не бежим.</div><div class="chips"><span class="chip">~1.5 часа</span><span class="chip">photo walk</span></div><a class="map" target="_blank" href="https://yandex.ru/maps/?rtext=%D0%A2%D1%80%D1%83%D0%B1%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C~%D0%9D%D0%B5%D0%B3%D0%BB%D0%B8%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0~%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%9C%D0%BE%D1%81%D1%82~%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9%20%D1%82%D0%B5%D0%B0%D1%82%D1%80~%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0">↗ примерный маршрут</a></div></div>
+<div class="row"><div class="time">~16:40</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Honibi 💿</div><div class="desc">С Тверской едем к «Улице 1905 года». Альбомы, журналы, карточки, TAEMIN hunting.</div><div class="chips"><span class="chip">45–60 мин</span><span class="chip">K-pop store</span></div><a class="map" target="_blank" href="https://yandex.ru/maps/?text=Honibi%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%201905%20%D0%B3%D0%BE%D0%B4%D0%B0%202">↗ открыть</a></div></div>
+<div class="row"><div class="time">~18:00</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Еда у дома + собираемся</div><div class="desc">Wu Shu / Тануки / доставка — по настроению, цене и КБЖУ. Не едем в отдельный район ради ужина.</div><div class="chips"><span class="chip">азиатское</span><span class="chip">рядом</span></div></div></div>
+<div class="row"><div class="time">~19:10</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Выезжаем в BASE</div><div class="desc">Покупки оставили, макияж поправили — и на концерт. Если хотим ближе к сцене, выезжаем раньше.</div><a class="map" target="_blank" href="https://yandex.ru/maps/?text=BASE%20%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5%2011%20%D1%81%D1%82%D1%80%201%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0">↗ BASE</a></div></div>
+<div class="row"><div class="time">20:00</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">BLOO 🖤</div><div class="desc">Вайбим. После — просто обратно в отель.</div></div></div>
+</div></div>
+</div></section>
+
+<section id="d2"><div class="wrap">
+<div class="head"><div><div class="eyebrow">Day 02 · China / K-pop / food</div><h2>Воскресенье · 27.09</h2></div><div class="sub">Без багажа: после Hongdae никуда за вещами не возвращаемся — сразу в сторону Ярославского.</div></div>
+<div class="card">
+<div class="daytop"><strong>Huaming × Hongdae 🏮</strong><span class="theme">北京 → 서울</span></div>
+<div class="timeline">
+<div class="row"><div class="time">~09:30</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Завтрак</div><div class="desc">Рядом / Трубная / заказать. После концерта никто не встаёт в 7 утра.</div></div></div>
+<div class="row"><div class="time">~10:30</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Выезжаем в Хуамин</div><div class="desc">Китайский парк и совсем другой вайб второго дня.</div><a class="map" target="_blank" href="https://yandex.ru/maps/?text=%D0%BF%D0%B0%D1%80%D0%BA%20%D0%A5%D1%83%D0%B0%D0%BC%D0%B8%D0%BD%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0">↗ открыть</a></div></div>
+<div class="row"><div class="time">11:15–12:30</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Хуамин 🏮</div><div class="desc">Павильоны, мостики, архитектура и фотки. Примерно 1–1.25 часа.</div><div class="chips"><span class="chip">photo spot</span><span class="chip">garden</span></div></div></div>
+<div class="row"><div class="time">~13:15</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Hongdae K-pop Cafe 💗</div><div class="desc">Бауманская: музыка, K-pop, фотозоны, напитки. Здесь спокойно зависаем около часа.</div><a class="map" target="_blank" href="https://yandex.ru/maps/?text=Hongdae%20K-pop%20Cafe%20%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C%2016%2F15%20%D1%81%D1%82%D1%80%205">↗ открыть</a></div></div>
+<div class="row"><div class="time">~14:30</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Азиатская еда — если успеваем</div><div class="desc">Остаёмся на Бауманской. Самый прикольный вариант — KONO: выбираем корейский рамен и готовим его сами.</div><div class="chips"><span class="chip">optional</span><span class="chip">budget</span><span class="chip">self-cook ramen</span></div><a class="map" target="_blank" href="https://yandex.ru/maps/?text=KONO%20%D0%9B%D0%B0%D0%B4%D0%BE%D0%B6%D1%81%D0%BA%D0%B0%D1%8F%207%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0">↗ KONO</a></div></div>
+<div class="row"><div class="time">~15:30</div><div class="rail"><span class="dot"></span></div><div class="body"><div class="place">Сразу на Ярославский</div><div class="desc">Без возврата в отель и без багажа. Цель — оказаться на вокзале примерно к 15:45–16:00 и не нервничать перед поездом.</div><a class="map" target="_blank" href="https://yandex.ru/maps/?rtext=%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0~%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB">↗ к вокзалу</a></div></div>
+</div></div>
+</div></section>
+
+<section id="route"><div class="wrap">
+<div class="head"><div><div class="eyebrow">movement map</div><h2>Схема пути</h2></div><div class="sub">Не карта до метра, а быстрый взгляд на направление: почти всё идёт цепочкой, без бессмысленных крюков.</div></div>
+<div class="routes">
+<div class="route"><h3>26.09 · city → K-pop → concert</h3><div class="metro"><div class="st"><b>Ярославский</b>12:00</div><div class="st"><b>Тверская</b>еда</div><div class="st"><b>Трубная</b>отель</div><div class="st"><b>Центр</b>walk</div><div class="st"><b>1905 года</b>Honibi</div><div class="st"><b>Трубная</b>еда</div><div class="st"><b>BASE</b>BLOO</div></div></div>
+<div class="route"><h3>27.09 · China → Korea → train</h3><div class="metro"><div class="st"><b>Трубная</b>утро</div><div class="st"><b>Хуамин</b>park</div><div class="st"><b>Бауманская</b>Hongdae</div><div class="st"><b>KONO</b>optional</div><div class="st"><b>Ярославский</b>поезд</div></div></div>
+</div>
+<div class="note"><b>Правило поездки:</b> если начинаем отставать, убираем дополнительную еду/кофе — не Honibi, не Хуамин, не Hongdae и точно не концерт.</div>
+</div></section>
+
+<section id="spots"><div class="wrap">
+<div class="head"><div><div class="eyebrow">main characters</div><h2>Главные места</h2></div><div class="sub">Не “галочки”, а те места, ради которых поездка ощущается нашей.</div></div>
+<div class="spots">
+<div class="spot" style="--a:rgba(255,86,109,.42)"><div class="emo">💿</div><div><small>K-POP SHOP</small><h3>Honibi</h3><p>Альбомы, карточки, журналы и охота на TAEMIN-мерч.</p></div></div>
+<div class="spot" style="--a:rgba(122,226,197,.38)"><div class="emo">🎤</div><div><small>MAIN EVENT</small><h3>BLOO · BASE</h3><p>Главный финал субботы. После — никаких сложных планов.</p></div></div>
+<div class="spot" style="--a:rgba(241,200,107,.35)"><div class="emo">🏮</div><div><small>CHINA MOOD</small><h3>Хуамин</h3><p>Красные детали, мостики, павильоны и спокойная прогулка.</p></div></div>
+<div class="spot" style="--a:rgba(200,183,255,.36)"><div class="emo">🧋</div><div><small>K-POP CAFE</small><h3>Hongdae</h3><p>Музыка, фотозоны и корейский финал перед вокзалом.</p></div></div>
+<div class="spot" style="--a:rgba(255,122,114,.33)"><div class="emo">🍜</div><div><small>OPTIONAL FOOD</small><h3>KONO</h3><p>Самостоятельно готовим рамен — дёшево и прикольно, если есть время.</p></div></div>
+<div class="spot" style="--a:rgba(122,226,197,.28)"><div class="emo">🌃</div><div><small>MOSCOW WALK</small><h3>Неглинная × Тверская</h3><p>Москва без “обязательных” достопримечательностей — просто красивый центр.</p></div></div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap foot"><div><strong>See you in Moscow ✦</strong><span>26–27 сентября 2026 · наш Asia weekend</span></div><div>♥</div></div></footer>
+
+<script>
+const target=new Date("2026-09-26T12:00:00+03:00");
+function tick(){const d=target-new Date(),el=document.getElementById("count");if(d<=0){el.textContent="мы уже в Москве ✦";return}const days=Math.floor(d/86400000),hrs=Math.floor(d%86400000/3600000);el.textContent=days+" д "+hrs+" ч"}tick();setInterval(tick,60000);
+document.getElementById("share").onclick=async()=>{if(navigator.share){try{await navigator.share({title:document.title,text:"Наш план на Москву 26–27 сентября ✦",url:location.href})}catch(e){}}else{navigator.clipboard?.writeText(location.href);alert("Ссылка скопирована")}};
+</script>
+</body>
+</html>
